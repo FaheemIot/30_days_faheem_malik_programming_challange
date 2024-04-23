@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    char choice;
+
+    // Prompt the user with a decision
+    printf("Do you want to go for a walk? (y/n): ");
+    scanf(" %c", &choice);
+
+    // Check user's decision
+    if (choice == 'y' || choice == 'Y') {
+        printf("Great! Let's go for a walk.\n");
+    } else if (choice == 'n' || choice == 'N') {
+        printf("Maybe next time then.\n");
+    } else {
+        printf("Invalid choice.\n");
+    }
+
+    return 0;
+}
